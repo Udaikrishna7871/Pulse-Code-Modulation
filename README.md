@@ -3,6 +3,10 @@
 Write a simple Python program for the modulation and demodulation of PCM, and DM.
 # Tools required
 Python IDE with Numpy and Scipy
+
+# Theory
+**Pulse Code Modulation (PCM)** is a digital modulation technique in which a continuous-time signal is sampled, quantized, and encoded into a binary sequence, providing high noise immunity and accurate signal representation at the cost of increased bandwidth. **Delta Modulation (DM)** is a simpler digital modulation method that encodes only the difference between successive samples using a single bit, resulting in reduced complexity and bandwidth, but it suffers from slope overload distortion and granular noise when the step size is not chosen properly.
+
 # Program
 ## Pulse-Code-Modulation
 ```
@@ -70,7 +74,6 @@ plt.grid(True)
 
 plt.tight_layout()
 plt.show()
-
 ```
 ## Delta-Modulation
 ```
@@ -129,14 +132,14 @@ plt.legend()
 plt.grid()
 plt.tight_layout()
 plt.show()
-
 ```
 # Output Waveform
 ## Pulse-code-Modulation
-<img width="1189" height="990" alt="image" src="https://github.com/user-attachments/assets/275d8a24-db7c-4b77-8116-c745534392ec" />
+<img width="1189" height="990" alt="image" src="https://github.com/user-attachments/assets/0d858559-26be-4b43-9b65-b3ab52005b75" />
+
 
 ## Delta-Modulation
-<img width="1203" height="590" alt="image" src="https://github.com/user-attachments/assets/60a6e8f8-c9dd-4217-8646-dc531197184f" />
+<img width="1203" height="590" alt="image" src="https://github.com/user-attachments/assets/e8d468d1-add2-4ab9-b80e-901714600e19" />
 
 # Results
 The analog signal was successfully encoded and reconstructed using PCM and DM techniques in Python, verifying their working principles.
